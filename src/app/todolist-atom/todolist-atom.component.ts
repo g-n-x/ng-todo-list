@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-todolist-atom',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todolist-atom.component.css']
 })
 export class TodolistAtomComponent implements OnInit {
+
+  @Input()
+  public title: string = "";
+  @Input()
+  public description: string = "";
+
 
   constructor() { }
 
