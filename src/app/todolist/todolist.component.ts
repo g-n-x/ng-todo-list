@@ -29,4 +29,19 @@ export class TodolistComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addTodo(title: string, description: string) {
+
+    if(title == '' || description == '') {
+      alert('you must describe both');
+      return;
+    }
+
+    let todolist: ITodoList = {
+      title: title,
+      description: description
+    };
+
+    this.todoList.push(todolist);
+  }
+
 }

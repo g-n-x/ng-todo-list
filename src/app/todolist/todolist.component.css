@@ -20,6 +20,7 @@ input[type=text] {
     background-color: #212529;
     border: none;
     color: #757575;
+    margin: 0;
 }
 
 .inputadd {

@@ -1,7 +1,8 @@
 <div class="cont">
     <h1>TodoList</h1>
-    <input type="text" placeholder="Add todo...">
-    <span class="inputadd">
+    <input #title type="text" placeholder="Add title...">
+    <input #description type="text" placeholder="Add description...">
+    <span (click)="addTodo(title.value, description.value)" class="inputadd">
         <i class="fas fa-plus"></i>
     </span>
     <!-- we are passing an array to this component -->
