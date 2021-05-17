@@ -1,3 +1,3 @@
-<div ngFor="let todo of todoList">
-
+<div *ngFor="let todo of todoList">
+    <app-todolist-atom [title]="todo.title" [description]="todo.description"></app-todolist-atom>
 </div>

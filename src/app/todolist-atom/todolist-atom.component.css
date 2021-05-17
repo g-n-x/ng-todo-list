@@ -1,0 +1,40 @@
+.cont {
+    background-color: #212529;
+    color: #757575;
+    margin: 10px;
+}
+
+.title {
+    border: 1px solid black;
+    border-left: 4px solid green;
+
+}
+
+.description {
+    border: 1px solid #757575;
+    border-left: 4px solid red;
+}
+
+.delete {
+    position: relative;
+}
+
+i.fa-trash-alt {
+    color: white;
+    background-color: #757575;
+    padding: 11px;
+    position: absolute;
+    right: -230px;
+    bottom: -23px;
+    border-radius: 100%;
+}
+
+i.fa-trash-alt:hover {
+    color: rgb(138, 0, 0);
+    background-color: rgb(27, 27, 27);
+    padding: 11px;
+    position: absolute;
+    right: -230px;
+    bottom: -23px;
+    border-radius: 100%;
+}

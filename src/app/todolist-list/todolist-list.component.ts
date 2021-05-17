@@ -7,8 +7,19 @@ import { ITodoList } from '../todolist.interface';
   styleUrls: ['./todolist-list.component.css']
 })
 export class TodolistListComponent implements OnInit {
-
-  public todoList: ITodoList[] = [];
+  apple: ITodoList = {
+    title:"りんご",
+    description:"美味しいの果物"
+  };
+  cow: ITodoList = {
+    title:"牛",
+    description:"おいしいの肉"
+  };
+  chocolate: ITodoList = {
+    title:"Chocolate",
+    description:"nham nham"
+  };
+  public todoList: ITodoList[] = [ this.apple, this.cow, this.chocolate ];
 
   constructor() { }
 
