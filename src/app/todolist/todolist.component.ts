@@ -29,10 +29,6 @@ export class TodolistComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    todoList.push(this.apple);
-    todoList.push(this.cow);
-    todoList.push(this.chocolate);
-    todoList.push(this.orange);
   }
 
   addTodo(title: string, description: string) {
