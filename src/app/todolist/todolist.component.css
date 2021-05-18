@@ -21,6 +21,7 @@ input[type=text] {
     border: none;
     color: #757575;
     margin: 0;
+    outline: none;
 }
 
 .inputadd {
@@ -30,7 +31,7 @@ input[type=text] {
 i.fa-plus {
    color: white;
    top: -10px;
-   right: -5px;
+   right: -7px;
    background: #212529;
    padding: 14px;
    border-radius: 100%;
@@ -40,12 +41,5 @@ i.fa-plus {
 
 i.fa-plus:hover {
     color: green;
-    top: -10px;
-    right: -5px;
-    background: #212529;
-    padding: 14px;
-    border-radius: 100%;
-    position: absolute;
-    cursor: pointer;
- }
+}
  

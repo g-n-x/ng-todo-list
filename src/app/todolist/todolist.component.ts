@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITodoList } from '../todolist.interface';
+import { todoList } from '../globals';
 
 @Component({
   selector: 'app-todolist',
@@ -23,10 +24,15 @@ export class TodolistComponent implements OnInit {
     title: "orange",
     description: "failed"
   }
-  public todoList: ITodoList[] = [ this.apple, this.cow, this.chocolate, this.orange ];
+  
+  pericles = todoList;
   constructor() { }
 
   ngOnInit(): void {
+    todoList.push(this.apple);
+    todoList.push(this.cow);
+    todoList.push(this.chocolate);
+    todoList.push(this.orange);
   }
 
   addTodo(title: string, description: string) {
@@ -36,12 +42,12 @@ export class TodolistComponent implements OnInit {
       return;
     }
 
-    let todolist: ITodoList = {
+    let tl: ITodoList = {
       title: title,
       description: description
     };
 
-    this.todoList.push(todolist);
+    todoList.push(tl);
   }
 
 }
