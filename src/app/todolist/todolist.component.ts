@@ -8,24 +8,8 @@ import { todoList } from '../globals';
   styleUrls: ['./todolist.component.css']
 })
 export class TodolistComponent implements OnInit {
-  apple: ITodoList = {
-    title:"りんご",
-    description:"美味しいの果物"
-  };
-  cow: ITodoList = {
-    title:"牛",
-    description:"おいしいの肉"
-  };
-  chocolate: ITodoList = {
-    title:"Chocolate",
-    description:"nham nham"
-  };
-  orange: ITodoList = {
-    title: "orange",
-    description: "failed"
-  }
-  
-  pericles = todoList;
+
+  tlist = todoList;
   constructor() { }
 
   ngOnInit(): void {
